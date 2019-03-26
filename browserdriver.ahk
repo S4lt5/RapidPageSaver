@@ -17,6 +17,8 @@ randomChars(length) {
 
 printOnePage()
 {
+Sleep 50
+MouseClick, left, 685,653
 Sleep, 300
 Send, ^p
 Sleep, 500
@@ -29,6 +31,12 @@ Sleep, 200
 Send, {Enter}
 return
 }
+
+^h::
+MsgBox, Click where you want to capture
+MouseGetPos, endxpos, endypos
+MsgBox Co-ordinate is  %endxpos% , %endypos%
+return
 
 ^j::
 InputBox, pages, How many pages?
