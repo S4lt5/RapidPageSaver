@@ -19,15 +19,15 @@ printOnePage()
 {
 Sleep 50
 MouseClick, left, 685,653
-Sleep, 300
+Sleep, 400
 Send, ^p
 Sleep, 500
 Send, {Enter}
 Sleep, 300
 Send, {Home}
-Sleep, 50
+Sleep, 100
 Send % randomChars(8)
-Sleep, 200
+Sleep, 230
 Send, {Enter}
 return
 }
